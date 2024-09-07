@@ -1,0 +1,26 @@
+fun sum() {
+    val a: Int = readLine()!!.toInt()
+    val b: Int = readLine()!!.toInt()
+    val ans: Int = a + b
+    println(ans)
+}
+fun square() {
+    val a: Int = readLine()!!.toInt()
+    val ans: Int = a * a
+    println(ans)
+}
+
+fun helloUser() {
+    val name = readLine()!!
+    sayHello(name)
+}
+
+fun sayHello(name: String) {
+    println("Hello ${name}!")
+}
+fun main() {
+    sayHello("World")
+    helloUser()
+    square()
+    sum()
+}
